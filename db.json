@@ -1,1348 +1,1396 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "firstName": "רבקה",
-            "lastName": "זלקינד",
-            "email": "admin@artliving.co.il",
-            "phone": "050-1234567",
-            "password": "Admin123!",
-            "userName": "admin",
-            "address": {
-                "street": "הרצל 1",
-                "city": "תל אביב",
-                "state": "ישראל",
-                "zip": "61000"
-            },
-            "isAdmin": true
-        },
-        {
-            "id": 2,
-            "firstName": "דנה",
-            "lastName": "לוי",
-            "email": "dana@gmail.com",
-            "phone": "052-1112233",
-            "password": "Dana123!",
-            "userName": "DanaL",
-            "address": {
-                "street": "השיטה 4",
-                "city": "רמת גן",
-                "state": "ישראל",
-                "zip": "52233"
-            },
-            "isAdmin": false
-        },
-        {
-            "id": 3,
-            "firstName": "רוני",
-            "lastName": "כהן",
-            "email": "roni@art.com",
-            "phone": "054-4445566",
-            "password": "Roni456!",
-            "userName": "RoniC",
-            "address": {
-                "street": "דיזנגוף 100",
-                "city": "תל אביב",
-                "state": "ישראל",
-                "zip": "64321"
-            },
-            "isAdmin": false
-        },
-        {
-            "id": 4,
-            "firstName": "אלון",
-            "lastName": "מזרחי",
-            "email": "alon@walla.co.il",
-            "phone": "053-9998877",
-            "password": "Alon789!",
-            "userName": "AlonM",
-            "address": {
-                "street": "הנשיא 12",
-                "city": "חיפה",
-                "state": "ישראל",
-                "zip": "32000"
-            },
-            "isAdmin": false
-        },
-        {
-            "id": 5,
-            "firstName": "מיכל",
-            "lastName": "אברהם",
-            "email": "michal@gmail.com",
-            "phone": "050-7776655",
-            "password": "Michal321!",
-            "userName": "MichalA",
-            "address": {
-                "street": "ירושלים 5",
-                "city": "באר שבע",
-                "state": "ישראל",
-                "zip": "84100"
-            },
-            "isAdmin": false
-        }
-    ],
-    "products": [
-        {
-            "id": 1,
-            "name": "ספת עור Zander - חום קוניאק",
-            "description": "ספת עור יוקרתית בעיצוב Mid-Century. עור איכותי המשתבח עם הזמן.",
-            "price": 8900.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/zander-leather-sofa-90-1-q.jpg",
-            "salesCount": 12
-        },
-        {
-            "id": 2,
-            "name": "מראת קשת Streamline - זהב",
-            "description": "מראת גוף מרהיבה עם מסגרת מתכת זהובה דקה.",
-            "price": 2100.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/streamline-oversized-wide-arch-metal-floor-mirror-q.jpg",
-            "salesCount": 45
-        },
-        {
-            "id": 3,
-            "name": "שולחן אוכל Tripod - עץ אגוז",
-            "description": "שולחן עגול בעיצוב נקי עם רגליים מעוצבות.",
-            "price": 3450.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/tripod-dining-table-30-walnut-q.jpg",
-            "salesCount": 28
-        },
-        {
-            "id": 4,
-            "name": "כיסא Hyde - בד טקסטורלי בז'",
-            "description": "כיסא ארגונומי המשלב נוחות וסטייל נורדי.",
-            "price": 980.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/hyde-dining-chair-q.jpg",
-            "salesCount": 89
-        },
-        {
-            "id": 5,
-            "name": "שידת כניסה Nolan - עץ דובדבן",
-            "description": "יחידת אחסון אלגנטית למבואה עם חריצים דקורטיביים.",
-            "price": 2400.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/build-your-own-nolan-entryway-collection-q(2).jpg",
-            "salesCount": 15
-        },
-        {
-            "id": 6,
-            "name": "סט מצעי Tencel - קרם פנינה",
-            "description": "מצעים רכים ומלטפים העשויים מסיבי טנסל.",
-            "price": 580.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
-            "salesCount": 120
-        },
-        {
-            "id": 7,
-            "name": "שולחן כתיבה Mid-Century - אלון",
-            "description": "שולחן עבודה רחב עם שלוש מגירות אחסון.",
-            "price": 3100.0,
-            "category": "חדר עבודה",
-            "imageUrl": "/assets/images/products/mid-century-desk-52-q(2).jpg",
-            "salesCount": 34
-        },
-        {
-            "id": 8,
-            "name": "ספת Harris מודולרית - בז'",
-            "description": "ספה רחבה ועמוקה בעיצוב עכשווי ומזמין.",
-            "price": 6400.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/harris-sofa-66-108-5-q.jpg",
-            "salesCount": 18
-        },
-        {
-            "id": 9,
-            "name": "כוורת ספרים Mid-Century",
-            "description": "יחידת מדפים פתוחה בגימור עץ חמים.",
-            "price": 2850.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/mid-century-bookshelf-w-drawer-38-q.jpg",
-            "salesCount": 14
-        },
-        {
-            "id": 10,
-            "name": "מראה א-סימטרית 'טיפה' - שחור",
-            "description": "מראת גוף ייחודית בעלת צורה אורגנית.",
-            "price": 1350.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/mid-century-asymmetrical-wood-floor-mirror-q(2).jpg",
-            "salesCount": 38
-        },
-        {
-            "id": 11,
-            "name": "ספת Harris - אפור פחם",
-            "description": "ספת תלת-מושבית נוחה במיוחד בעיצוב נקי.",
-            "price": 5900.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/harris-sofa-66-108-q.jpg",
-            "salesCount": 10
-        },
-        {
-            "id": 12,
-            "name": "כיסא Anton - ריפוד שמנת",
-            "description": "כיסא אוכל אלגנטי עם רגלי עץ כהות.",
-            "price": 1150.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/anton-dining-chair-6-q.jpg",
-            "salesCount": 55
-        },
-        {
-            "id": 13,
-            "name": "שידת Nolan רחבה - אגוז",
-            "description": "פתרון אחסון יוקרתי עם חזית מחורצת.",
-            "price": 3200.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/img3j(1).jpg",
-            "salesCount": 22
-        },
-        {
-            "id": 14,
-            "name": "מיטת Laurent - בד בוצ'לה",
-            "description": "מיטה זוגית בעיצוב רך ומעוגל.",
-            "price": 4600.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/laurent-bed-10-q.jpg",
-            "salesCount": 19
-        },
-        {
-            "id": 15,
-            "name": "מראת קיר Elinor - רטאן",
-            "description": "מראה עגולה בעבודת יד מחומרים טבעיים.",
-            "price": 790.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/elinor-rattan-wall-mirror-q.jpg",
-            "salesCount": 60
-        },
-        {
-            "id": 16,
-            "name": "שמיכת HydroCool יוקרתית",
-            "description": "טכנולוגיית קירור אקטיבית לשינה נעימה.",
-            "price": 850.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/hydrocool-cooling-down-alternative-duvet-insert-c.jpg",
-            "salesCount": 150
-        },
-        {
-            "id": 17,
-            "name": "ספסל Abbott - עץ אלון",
-            "description": "ספסל כניסה עם מושב קלוע בעבודת יד.",
-            "price": 1350.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/abbott-bench-q.jpg",
-            "salesCount": 30
-        },
-        {
-            "id": 18,
-            "name": "מראה מלבנית שחורה",
-            "description": "מראה גדולה בעיצוב מינימליסטי.",
-            "price": 950.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/metal-frame-rectangular-wall-mirror-q.jpg",
-            "salesCount": 42
-        },
-        {
-            "id": 19,
-            "name": "כרית גוף פשתן אירופאי",
-            "description": "כרית ארוכה מ-100% פשתן איכותי.",
-            "price": 180.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/european-flax-linen-body-pillow-cover-q.jpg",
-            "salesCount": 75
-        },
-        {
-            "id": 20,
-            "name": "שולחן קפה גיאומטרי - אלון",
-            "description": "שולחן נמוך וייחודי המדגיש את העץ.",
-            "price": 1850.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/img11j.jpg",
-            "salesCount": 26
-        },
-        {
-            "id": 21,
-            "name": "ספת עור Zander - שחור",
-            "description": "גרסה מודרנית ויוקרתית בעור שחור.",
-            "price": 9200.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/zander-leather-sofa-90-1-q.jpg",
-            "salesCount": 8
-        },
-        {
-            "id": 22,
-            "name": "מראת Streamline - כסף",
-            "description": "מראת גוף רחבה בגימור כרום מבריק.",
-            "price": 2000.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/streamline-oversized-wide-arch-metal-floor-mirror-q.jpg",
-            "salesCount": 21
-        },
-        {
-            "id": 23,
-            "name": "כיסא Hyde - עור קאמל",
-            "description": "כיסא אוכל מרופד בעור איכותי ורך.",
-            "price": 1400.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/hyde-leather-dining-chair-q.jpg",
-            "salesCount": 33
-        },
-        {
-            "id": 24,
-            "name": "סט מצעי Tencel - אפור כחלחל",
-            "description": "מצעי טנסל יוקרתיים בגוון מרגיע.",
-            "price": 580.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
-            "salesCount": 45
-        },
-        {
-            "id": 25,
-            "name": "שידת צד Nolan - קטן",
-            "description": "שידת לילה תואמת לסדרת נולאן.",
-            "price": 1100.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/img44j.jpg",
-            "salesCount": 52
-        },
-        {
-            "id": 26,
-            "name": "מראה עגולה רצועת עור",
-            "description": "מראת קיר נתלית בעיצוב נורדי.",
-            "price": 750.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/modern-hanging-round-wall-mirror-w-leather-strap-q.jpg",
-            "salesCount": 67
-        },
-        {
-            "id": 27,
-            "name": "כיסא משרדי Swivel",
-            "description": "כיסא עבודה ארגונומי עם רגלי עץ.",
-            "price": 1600.0,
-            "category": "חדר עבודה",
-            "imageUrl": "/assets/images/products/mid-century-swivel-office-chair-wood-legs-q.jpg",
-            "salesCount": 38
-        },
-        {
-            "id": 28,
-            "name": "ספת Harris - בז' בהיר",
-            "description": "ספה רחבה בריפוד בד נעים למגע.",
-            "price": 6200.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/harris-sofa-66-108-5-q.jpg",
-            "salesCount": 14
-        },
-        {
-            "id": 29,
-            "name": "מראת חלון Raven - שחור",
-            "description": "מראה מחולקת המדמה חלון מעוצב.",
-            "price": 1550.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/raven-window-metal-wall-mirrors-q.jpg",
-            "salesCount": 29
-        },
-        {
-            "id": 30,
-            "name": "שולחן אוכל Tripod - אלון",
-            "description": "גרסת עץ האלון הבהיר לשולחן טריפוד.",
-            "price": 3200.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/tripod-dining-table-30-walnut-q.jpg",
-            "salesCount": 17
-        },
-        {
-            "id": 31,
-            "name": "שידת Nolan כפולה",
-            "description": "שידה רחבה במיוחד עם שטח אחסון גדול.",
-            "price": 3800.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/img3j(1).jpg",
-            "salesCount": 11
-        },
-        {
-            "id": 32,
-            "name": "מיטת Laurent - בז' נייטרלי",
-            "description": "מיטה מעוצבת בבד עמיד וקל לניקוי.",
-            "price": 4400.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/laurent-bed-10-q.jpg",
-            "salesCount": 25
-        },
-        {
-            "id": 33,
-            "name": "מראה אסימטרית - עץ טבעי",
-            "description": "מסגרת עץ דקה בצורה אורגנית מיוחדת.",
-            "price": 1400.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/mid-century-asymmetrical-wood-floor-mirror-q(2).jpg",
-            "salesCount": 19
-        },
-        {
-            "id": 34,
-            "name": "כיסא Anton - עץ אלון",
-            "description": "כיסא אוכל בסגנון מיד-סנצ'ורי קלאסי.",
-            "price": 1050.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/anton-dining-chair-6-q.jpg",
-            "salesCount": 42
-        },
-        {
-            "id": 35,
-            "name": "ספת עור Zander - קוניאק בהיר",
-            "description": "גוון קלאסי ויוקרתי לספת זאנדר.",
-            "price": 8900.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/zander-leather-sofa-90-1-q.jpg",
-            "salesCount": 6
-        },
-        {
-            "id": 36,
-            "name": "שידת לילה Nolan",
-            "description": "שידה קטנה עם מגירה אחת לחדר השינה.",
-            "price": 950.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/img44j.jpg",
-            "salesCount": 58
-        },
-        {
-            "id": 37,
-            "name": "שולחן כתיבה - אגוז כהה",
-            "description": "שולחן עבודה מעוצב מעץ עשיר.",
-            "price": 3300.0,
-            "category": "חדר עבודה",
-            "imageUrl": "/assets/images/products/mid-century-desk-52-q(2).jpg",
-            "salesCount": 13
-        },
-        {
-            "id": 38,
-            "name": "מראה Streamline - ברונזה",
-            "description": "מראה יוקרתית בגימור מתכת כהה.",
-            "price": 2150.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/streamline-oversized-wide-arch-metal-floor-mirror-q.jpg",
-            "salesCount": 24
-        },
-        {
-            "id": 39,
-            "name": "ספת Harris - כחול נייבי",
-            "description": "ספה בריפוד בד כהה ועמיד ללכלוך.",
-            "price": 6100.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/harris-sofa-66-108-q.jpg",
-            "salesCount": 16
-        },
-        {
-            "id": 40,
-            "name": "כיסא Hyde - בד אפור",
-            "description": "כיסא אוכל מרופד בבד טקסטורלי אפור.",
-            "price": 1020.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/hyde-dining-chair-q.jpg",
-            "salesCount": 37
-        },
-        {
-            "id": 41,
-            "name": "כוורת ספרים - אגוז",
-            "description": "מדפי ספרים מעץ אגוז איכותי.",
-            "price": 2950.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/mid-century-bookshelf-w-drawer-38-q.jpg",
-            "salesCount": 9
-        },
-        {
-            "id": 42,
-            "name": "מצעי Tencel - לבן",
-            "description": "סט מצעים לבן נקי ויוקרתי.",
-            "price": 580.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
-            "salesCount": 88
-        },
-        {
-            "id": 43,
-            "name": "מראה עגולה Elinor - לבן",
-            "description": "מסגרת רטאן צבועה בלבן למראה מודרני.",
-            "price": 820.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/elinor-rattan-wall-mirror-q.jpg",
-            "salesCount": 31
-        },
-        {
-            "id": 44,
-            "name": "ספסל Abbott - עץ כהה",
-            "description": "ספסל אחסון בעיצוב עץ כהה ויוקרתי.",
-            "price": 1450.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/abbott-bench-q.jpg",
-            "salesCount": 22
-        },
-        {
-            "id": 45,
-            "name": "שידת Nolan - חזית לבנה",
-            "description": "שילוב של עץ וצבע לבן בשידת נולאן.",
-            "price": 2600.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/build-your-own-nolan-entryway-collection-q(2).jpg",
-            "salesCount": 18
-        },
-        {
-            "id": 46,
-            "name": "מראה מלבנית - זהב",
-            "description": "מראת קיר גדולה במסגרת זהב מוברש.",
-            "price": 1050.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/metal-frame-rectangular-wall-mirror-q.jpg",
-            "salesCount": 54
-        },
-        {
-            "id": 47,
-            "name": "מיטת Laurent - אפור בהיר",
-            "description": "מיטה מרופדת בבד בוצ'לה אפור.",
-            "price": 4600.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/laurent-bed-10-q.jpg",
-            "salesCount": 12
-        },
-        {
-            "id": 48,
-            "name": "שולחן קפה - אגוז",
-            "description": "שולחן סלון נמוך מעץ אגוז עשיר.",
-            "price": 1950.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/img11j.jpg",
-            "salesCount": 27
-        },
-        {
-            "id": 49,
-            "name": "כיסא Anton - בד אפור",
-            "description": "כיסא אוכל מרופד עם רגלי עץ אלון.",
-            "price": 1100.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/anton-dining-chair-6-q.jpg",
-            "salesCount": 49
-        },
-        {
-            "id": 50,
-            "name": "ספת Harris - ירוק זית",
-            "description": "ספה בצבע ייחודי המכניסה חיים לסלון.",
-            "price": 6300.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/harris-sofa-66-108-q.jpg",
-            "salesCount": 15
-        },
-        {
-            "id": 51,
-            "name": "מראת Raven - זהב",
-            "description": "גרסת הזהב למראת החלון המפורסמת.",
-            "price": 1650.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/raven-window-metal-wall-mirrors-q.jpg",
-            "salesCount": 23
-        },
-        {
-            "id": 52,
-            "name": "שולחן כתיבה - לבן",
-            "description": "שולחן עבודה נקי ומודרני בצבע לבן.",
-            "price": 2900.0,
-            "category": "חדר עבודה",
-            "imageUrl": "/assets/images/products/mid-century-desk-52-q(2).jpg",
-            "salesCount": 36
-        },
-        {
-            "id": 53,
-            "name": "שידת Nolan - 3 מגירות",
-            "description": "שידת אחסון גבוהה וצרה לסדרת נולאן.",
-            "price": 1800.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/img3j(1).jpg",
-            "salesCount": 41
-        },
-        {
-            "id": 54,
-            "name": "כרית גוף - פשתן כחול",
-            "description": "כרית פינוק בציפית פשתן כחולה.",
-            "price": 190.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/european-flax-linen-body-pillow-cover-q.jpg",
-            "salesCount": 63
-        },
-        {
-            "id": 55,
-            "name": "מראה עגולה - מסגרת עץ",
-            "description": "מראת קיר קלאסית עם מסגרת עץ רחבה.",
-            "price": 850.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/elinor-rattan-wall-mirror-q.jpg",
-            "salesCount": 47
-        },
-        {
-            "id": 56,
-            "name": "כיסא Hyde - עור שחור",
-            "description": "כיסא אוכל יוקרתי בעור שחור מט.",
-            "price": 1450.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/hyde-leather-dining-chair-q.jpg",
-            "salesCount": 12
-        },
-        {
-            "id": 57,
-            "name": "סט מצעי Tencel - ירוק מרווה",
-            "description": "גוון טבעי ומרגיע למצעי הטנסל.",
-            "price": 580.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
-            "salesCount": 39
-        },
-        {
-            "id": 58,
-            "name": "ספת Harris - אפור בהיר",
-            "description": "גרסה רכה ובהירה של ספת האריס.",
-            "price": 6000.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/harris-sofa-66-108-q.jpg",
-            "salesCount": 28
-        },
-        {
-            "id": 59,
-            "name": "מראת קשת - שחור",
-            "description": "מראת גוף רחבה במסגרת שחורה.",
-            "price": 1950.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/streamline-oversized-wide-arch-metal-floor-mirror-q.jpg",
-            "salesCount": 35
-        },
-        {
-            "id": 60,
-            "name": "שידת Nolan - עץ אלון",
-            "description": "שידת כניסה בגימור עץ אלון בהיר.",
-            "price": 2300.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/build-your-own-nolan-entryway-collection-q(2).jpg",
-            "salesCount": 21
-        },
-        {
-            "id": 61,
-            "name": "שולחן אוכל - קוטר 120",
-            "description": "שולחן עגול גדול המתאים ל-4 סועדים.",
-            "price": 3800.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/tripod-dining-table-30-walnut-q.jpg",
-            "salesCount": 14
-        },
-        {
-            "id": 62,
-            "name": "מראה אסימטרית - זהב",
-            "description": "מסגרת זהב דקה בצורה אורגנית.",
-            "price": 1450.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/mid-century-asymmetrical-wood-floor-mirror-q(2).jpg",
-            "salesCount": 26
-        },
-        {
-            "id": 63,
-            "name": "כיסא Anton - עץ כהה",
-            "description": "כיסא אוכל בעיצוב עץ אגוז עשיר.",
-            "price": 1150.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/anton-dining-chair-6-q.jpg",
-            "salesCount": 33
-        },
-        {
-            "id": 64,
-            "name": "שמיכת HydroCool - זוגית",
-            "description": "שמיכת קירור במידה זוגית רחבה.",
-            "price": 950.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/hydrocool-cooling-down-alternative-duvet-insert-c.jpg",
-            "salesCount": 71
-        },
-        {
-            "id": 65,
-            "name": "כוורת Mid-Century - רחבה",
-            "description": "יחידת מדפים רחבה עם שטח תצוגה גדול.",
-            "price": 3400.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/mid-century-bookshelf-w-drawer-38-q.jpg",
-            "salesCount": 8
-        },
-        {
-            "id": 66,
-            "name": "ספת עור Zander - אפור",
-            "description": "ספת עור בגוון אפור מעושן יוקרתי.",
-            "price": 9100.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/zander-leather-sofa-90-1-q.jpg",
-            "salesCount": 4
-        },
-        {
-            "id": 67,
-            "name": "מצעי Tencel - ורוד עתיק",
-            "description": "גוון רומנטי ויוקרתי לחדר השינה.",
-            "price": 580.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
-            "salesCount": 42
-        },
-        {
-            "id": 68,
-            "name": "שידת לילה Nolan - לבן",
-            "description": "שידת צד קטנה בגימור לבן ועץ.",
-            "price": 1000.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/img44j.jpg",
-            "salesCount": 55
-        },
-        {
-            "id": 69,
-            "name": "מראה עגולה - רצועת בד",
-            "description": "מראת קיר נתלית בגרסת רצועה בהירה.",
-            "price": 720.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/modern-hanging-round-wall-mirror-w-leather-strap-q.jpg",
-            "salesCount": 61
-        },
-        {
-            "id": 70,
-            "name": "שולחן כתיבה - אפור מט",
-            "description": "שולחן עבודה מודרני בצבע אפור.",
-            "price": 3000.0,
-            "category": "חדר עבודה",
-            "imageUrl": "/assets/images/products/mid-century-desk-52-q(2).jpg",
-            "salesCount": 15
-        },
-        {
-            "id": 71,
-            "name": "ספת Harris - בד בוקלה",
-            "description": "ספה בריפוד בד בוקלה טרנדי ונעים.",
-            "price": 6800.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/harris-sofa-66-108-5-q.jpg",
-            "salesCount": 24
-        },
-        {
-            "id": 72,
-            "name": "מראת חלון Raven - כסף",
-            "description": "מסגרת כסף למראת החלון המעוצבת.",
-            "price": 1600.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/raven-window-metal-wall-mirrors-q.jpg",
-            "salesCount": 18
-        },
-        {
-            "id": 73,
-            "name": "כיסא Hyde - עור חום",
-            "description": "הגרסה הקלאסית ביותר של כיסא הייד.",
-            "price": 1380.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/hyde-leather-dining-chair-q.jpg",
-            "salesCount": 50
-        },
-        {
-            "id": 74,
-            "name": "כרית גוף - פשתן טבעי",
-            "description": "פשתן גולמי ואיכותי למראה אורגני.",
-            "price": 180.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/european-flax-linen-body-pillow-cover-q.jpg",
-            "salesCount": 92
-        },
-        {
-            "id": 75,
-            "name": "שידת Nolan - ארון כפול",
-            "description": "יחידת אחסון רחבה עם דלתות ומדפים.",
-            "price": 3100.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/img3j(1).jpg",
-            "salesCount": 13
-        },
-        {
-            "id": 76,
-            "name": "מיטת Laurent - אפור פחם",
-            "description": "מיטה זוגית בריפוד כהה ודרמטי.",
-            "price": 4700.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/laurent-bed-10-q.jpg",
-            "salesCount": 7
-        },
-        {
-            "id": 77,
-            "name": "שולחן קפה - לבן שיש",
-            "description": "שולחן סלון המשלב עץ ומשטח דמוי שיש.",
-            "price": 2200.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/img11j.jpg",
-            "salesCount": 31
-        },
-        {
-            "id": 78,
-            "name": "מראה Streamline - שחור מט",
-            "description": "המסגרת המבוקשת ביותר לסדרת סטרים-ליין.",
-            "price": 2000.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/streamline-oversized-wide-arch-metal-floor-mirror-q.jpg",
-            "salesCount": 64
-        },
-        {
-            "id": 79,
-            "name": "כיסא Anton - בד בז'",
-            "description": "כיסא אוכל מרופד בגוון נייטרלי.",
-            "price": 1080.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/anton-dining-chair-6-q.jpg",
-            "salesCount": 46
-        },
-        {
-            "id": 80,
-            "name": "ספת Harris - אפור כהה",
-            "description": "ספה עמוקה ומרווחת לאירוח מושלם.",
-            "price": 6100.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/harris-sofa-66-108-q.jpg",
-            "salesCount": 22
-        },
-        {
-            "id": 81,
-            "name": "שידת Nolan - גובה בינוני",
-            "description": "שידת אחסון ורסטילית לכל חדר.",
-            "price": 1950.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/build-your-own-nolan-entryway-collection-q(2).jpg",
-            "salesCount": 38
-        },
-        {
-            "id": 82,
-            "name": "מראה עגולה Elinor - עץ אלון",
-            "description": "מראה בעיצוב טבעי המשתלבת בכל חלל.",
-            "price": 880.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/elinor-rattan-wall-mirror-q.jpg",
-            "salesCount": 19
-        },
-        {
-            "id": 83,
-            "name": "שולחן אוכל Tripod - שחור",
-            "description": "שולחן אוכל דרמטי בעץ מושחר.",
-            "price": 3600.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/tripod-dining-table-30-walnut-q.jpg",
-            "salesCount": 5
-        },
-        {
-            "id": 84,
-            "name": "מצעי Tencel - אפור בהיר",
-            "description": "שינה רכה במצעים בגוון מודרני.",
-            "price": 580.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
-            "salesCount": 53
-        },
-        {
-            "id": 85,
-            "name": "מראה אסימטרית - שחור דק",
-            "description": "מסגרת מתכת שחורה למראה מינימליסטי.",
-            "price": 1380.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/mid-century-asymmetrical-wood-floor-mirror-q(2).jpg",
-            "salesCount": 44
-        },
-        {
-            "id": 86,
-            "name": "ספסל Abbott - ריפוד בד",
-            "description": "ספסל כניסה עם מושב מרופד ונוח.",
-            "price": 1500.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/abbott-bench-q.jpg",
-            "salesCount": 16
-        },
-        {
-            "id": 87,
-            "name": "שידת צד Nolan - 2 מגירות",
-            "description": "שידת לילה רחבה יותר לאחסון נוסף.",
-            "price": 1250.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/img44j.jpg",
-            "salesCount": 29
-        },
-        {
-            "id": 88,
-            "name": "ספת עור Zander - שוקולד",
-            "description": "עור בגוון חום כהה ועמוק.",
-            "price": 9300.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/zander-leather-sofa-90-1-q.jpg",
-            "salesCount": 3
-        },
-        {
-            "id": 89,
-            "name": "כיסא Anton - עור חום",
-            "description": "כיסא אוכל יוקרתי המשלב עץ ועור.",
-            "price": 1550.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/anton-dining-chair-6-q.jpg",
-            "salesCount": 27
-        },
-        {
-            "id": 90,
-            "name": "מראה חלון Raven - לבן",
-            "description": "מראה מחולקת במסגרת לבנה עדינה.",
-            "price": 1580.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/raven-window-metal-wall-mirrors-q.jpg",
-            "salesCount": 11
-        },
-        {
-            "id": 91,
-            "name": "שולחן כתיבה - עץ ומתכת",
-            "description": "שולחן עבודה בסגנון תעשייתי לופט.",
-            "price": 3100.0,
-            "category": "חדר עבודה",
-            "imageUrl": "/assets/images/products/mid-century-desk-52-q(2).jpg",
-            "salesCount": 22
-        },
-        {
-            "id": 92,
-            "name": "מצעי Tencel - חרדל",
-            "description": "צבע נועז וחם לקולקציית המצעים.",
-            "price": 580.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
-            "salesCount": 34
-        },
-        {
-            "id": 93,
-            "name": "מראה עגולה Elinor - אגוז",
-            "description": "מסגרת עץ אגוז למראה יוקרתי וחם.",
-            "price": 920.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/elinor-rattan-wall-mirror-q.jpg",
-            "salesCount": 14
-        },
-        {
-            "id": 94,
-            "name": "שידת Nolan - חזית שחורה",
-            "description": "שילוב מודרני של עץ וחזית שחורה.",
-            "price": 2700.0,
-            "category": "אחסון",
-            "imageUrl": "/assets/images/products/build-your-own-nolan-entryway-collection-q(2).jpg",
-            "salesCount": 16
-        },
-        {
-            "id": 95,
-            "name": "ספת Harris - צהוב אוקר",
-            "description": "פריט הצהרה צבעוני לחדר המגורים.",
-            "price": 6400.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/harris-sofa-66-108-q.jpg",
-            "salesCount": 9
-        },
-        {
-            "id": 96,
-            "name": "כיסא Hyde - בד כחול",
-            "description": "כיסא אוכל בריפוד בד כחול עמוק.",
-            "price": 1050.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/hyde-dining-chair-q.jpg",
-            "salesCount": 28
-        },
-        {
-            "id": 97,
-            "name": "מראה Streamline - גודל XL",
-            "description": "הגרסה הגדולה ביותר למראת הגוף.",
-            "price": 2400.0,
-            "category": "אביזרים",
-            "imageUrl": "/assets/images/products/streamline-oversized-wide-arch-metal-floor-mirror-q.jpg",
-            "salesCount": 39
-        },
-        {
-            "id": 98,
-            "name": "כרית גוף - פשתן לבן",
-            "description": "הגרסה הלבנה והקלאסית לכרית הגוף.",
-            "price": 180.0,
-            "category": "חדר שינה",
-            "imageUrl": "/assets/images/products/european-flax-linen-body-pillow-cover-q.jpg",
-            "salesCount": 110
-        },
-        {
-            "id": 99,
-            "name": "שולחן אוכל Tripod - קוטר 100",
-            "description": "שולחן אוכל קומפקטי לחללים קטנים.",
-            "price": 2900.0,
-            "category": "פינת אוכל",
-            "imageUrl": "/assets/images/products/tripod-dining-table-30-walnut-q.jpg",
-            "salesCount": 25
-        },
-        {
-            "id": 100,
-            "name": "ספת Harris - בז' כהה",
-            "description": "ספה נוחה ופרקטית לשימוש יומיומי.",
-            "price": 6000.0,
-            "category": "סלון",
-            "imageUrl": "/assets/images/products/harris-sofa-66-108-5-q.jpg",
-            "salesCount": 48
-        }
-    ],
-    "opinions": [
-        {
-            "id": 1,
-            "productId": 1,
-            "userId": 2,
-            "userName": "DanaL",
-            "rating": 5,
-            "comment": "ספה מדהימה, העור מרגיש איכותי מאוד.",
-            "date": "2024-05-15"
-        },
-        {
-            "id": 2,
-            "productId": 4,
-            "userId": 3,
-            "userName": "RoniC",
-            "rating": 4,
-            "comment": "כיסאות יפים מאוד, מוסיפים המון סטייל לפינת האוכל.",
-            "date": "2024-06-10"
-        },
-        {
-            "id": 3,
-            "productId": 6,
-            "userId": 5,
-            "userName": "MichalA",
-            "rating": 5,
-            "comment": "המצעים הכי נעימים שקניתי אי פעם, ממליצה בחום.",
-            "date": "2024-07-02"
-        },
-        {
-            "id": 4,
-            "productId": 2,
-            "userId": 4,
-            "userName": "AlonM",
-            "rating": 5,
-            "comment": "מראה ענקית ומרשימה, שדרגה את כל הכניסה לבית.",
-            "date": "2024-07-15"
-        },
-        {
-            "id": 5,
-            "productId": 7,
-            "userId": 2,
-            "userName": "DanaL",
-            "rating": 4,
-            "comment": "שולחן עבודה מעולה, הגיע מהר ובאיכות מצוינת.",
-            "date": "2024-08-01"
-        },
-        {
-            "id": 6,
-            "productId": 10,
-            "userId": 3,
-            "userName": "RoniC",
-            "rating": 5,
-            "comment": "המראה הזו היא פשוט יצירת אמנות.",
-            "date": "2024-08-12"
-        },
-        {
-            "id": 7,
-            "productId": 15,
-            "userId": 5,
-            "userName": "MichalA",
-            "rating": 4,
-            "comment": "מראה יפה, מוסיפה חמימות לחדר.",
-            "date": "2024-08-20"
-        },
-        {
-            "id": 8,
-            "productId": 3,
-            "userId": 4,
-            "userName": "AlonM",
-            "rating": 5,
-            "comment": "שולחן יציב ויפהפה, מתנקה בקלות.",
-            "date": "2024-09-05"
-        },
-        {
-            "id": 9,
-            "productId": 1,
-            "userId": 1,
-            "userName": "admin",
-            "rating": 5,
-            "comment": "מוצר הדגל שלנו, איכות ללא פשרות.",
-            "date": "2024-09-10"
-        },
-        {
-            "id": 10,
-            "productId": 8,
-            "userId": 2,
-            "userName": "DanaL",
-            "rating": 5,
-            "comment": "הספה המודולרית פשוט גאונית.",
-            "date": "2024-09-15"
-        },
-        {
-            "id": 11,
-            "productId": 12,
-            "userId": 3,
-            "userName": "RoniC",
-            "rating": 4,
-            "comment": "כיסא נוח מאוד לעבודה ממושכת.",
-            "date": "2024-09-20"
-        },
-        {
-            "id": 12,
-            "productId": 18,
-            "userId": 5,
-            "userName": "MichalA",
-            "rating": 5,
-            "comment": "עיצוב נקי ויוקרתי, בדיוק מה שחיפשתי.",
-            "date": "2024-09-25"
-        },
-        {
-            "id": 13,
-            "productId": 25,
-            "userId": 4,
-            "userName": "AlonM",
-            "rating": 5,
-            "comment": "איכות בנייה מעולה, רהיט לכל החיים.",
-            "date": "2024-10-01"
-        },
-        {
-            "id": 14,
-            "productId": 30,
-            "userId": 2,
-            "userName": "DanaL",
-            "rating": 5,
-            "comment": "שולחן מרשים שגורף המון מחמאות.",
-            "date": "2024-10-05"
-        },
-        {
-            "id": 15,
-            "productId": 35,
-            "userId": 3,
-            "userName": "RoniC",
-            "rating": 4,
-            "comment": "צבע העור מדויק ומרגיש נעים למגע.",
-            "date": "2024-10-10"
-        },
-        {
-            "id": 16,
-            "productId": 42,
-            "userId": 5,
-            "userName": "MichalA",
-            "rating": 5,
-            "comment": "הבד הכי איכותי שיש, לא מתקמט בקלות.",
-            "date": "2024-10-15"
-        },
-        {
-            "id": 17,
-            "productId": 50,
-            "userId": 4,
-            "userName": "AlonM",
-            "rating": 4,
-            "comment": "ספה יפהפייה, צבע מיוחד מאוד.",
-            "date": "2024-10-18"
-        },
-        {
-            "id": 18,
-            "productId": 55,
-            "userId": 2,
-            "userName": "DanaL",
-            "rating": 5,
-            "comment": "מראה גדולה שנותנת תחושת מרחב.",
-            "date": "2024-10-20"
-        },
-        {
-            "id": 19,
-            "productId": 60,
-            "userId": 3,
-            "userName": "RoniC",
-            "rating": 5,
-            "comment": "אחסון נוח וחכם, הכל מסודר עכשיו.",
-            "date": "2024-10-22"
-        },
-        {
-            "id": 20,
-            "productId": 65,
-            "userId": 5,
-            "userName": "MichalA",
-            "rating": 4,
-            "comment": "רהיט פרקטי ומעוצב.",
-            "date": "2024-10-25"
-        },
-        {
-            "id": 21,
-            "productId": 70,
-            "userId": 4,
-            "userName": "AlonM",
-            "rating": 5,
-            "comment": "שולחן כתיבה מצוין, גודל מושלם.",
-            "date": "2024-10-28"
-        },
-        {
-            "id": 22,
-            "productId": 75,
-            "userId": 2,
-            "userName": "DanaL",
-            "rating": 5,
-            "comment": "שידה יוקרתית שמשדרגת את כל החדר.",
-            "date": "2024-11-01"
-        },
-        {
-            "id": 23,
-            "productId": 80,
-            "userId": 3,
-            "userName": "RoniC",
-            "rating": 4,
-            "comment": "נוחות מקסימלית, ממליץ בחום.",
-            "date": "2024-11-03"
-        },
-        {
-            "id": 24,
-            "productId": 85,
-            "userId": 5,
-            "userName": "MichalA",
-            "rating": 5,
-            "comment": "מראה ייחודית, פריט אמנות לכל דבר.",
-            "date": "2024-11-05"
-        },
-        {
-            "id": 25,
-            "productId": 90,
-            "userId": 4,
-            "userName": "AlonM",
-            "rating": 4,
-            "comment": "איכות גבוהה מאוד, שירות מעולה.",
-            "date": "2024-11-08"
-        },
-        {
-            "id": 26,
-            "productId": 95,
-            "userId": 2,
-            "userName": "DanaL",
-            "rating": 5,
-            "comment": "הצבע פשוט מדהים ומוסיף המון אור.",
-            "date": "2024-11-10"
-        },
-        {
-            "id": 27,
-            "productId": 100,
-            "userId": 3,
-            "userName": "RoniC",
-            "rating": 5,
-            "comment": "סגירה מושלמת לעיצוב הבית.",
-            "date": "2024-11-12"
-        },
-        {
-            "id": 28,
-            "productId": 5,
-            "userId": 5,
-            "userName": "MichalA",
-            "rating": 4,
-            "comment": "שידה יפה ופונקציונלית.",
-            "date": "2024-11-15"
-        },
-        {
-            "id": 29,
-            "productId": 13,
-            "userId": 4,
-            "userName": "AlonM",
-            "rating": 5,
-            "comment": "אחסון מצוין ועיצוב נקי.",
-            "date": "2024-11-18"
-        },
-        {
-            "id": 30,
-            "productId": 21,
-            "userId": 2,
-            "userName": "DanaL",
-            "rating": 5,
-            "comment": "העור השחור נראה פשוט מדהים.",
-            "date": "2024-11-20"
-        },
-        {
-            "id": 31,
-            "productId": 27,
-            "userId": 3,
-            "userName": "RoniC",
-            "rating": 5,
-            "comment": "הכיסא הכי טוב שהיה לי למשרד.",
-            "date": "2024-11-22"
-        },
-        {
-            "id": 32,
-            "productId": 33,
-            "userId": 5,
-            "userName": "MichalA",
-            "rating": 4,
-            "comment": "מראה מרשימה ואיכותית.",
-            "date": "2024-11-25"
-        },
-        {
-            "id": 33,
-            "productId": 40,
-            "userId": 4,
-            "userName": "AlonM",
-            "rating": 5,
-            "comment": "נוח מאוד ויפה מאוד.",
-            "date": "2024-11-28"
-        },
-        {
-            "id": 34,
-            "productId": 48,
-            "userId": 2,
-            "userName": "DanaL",
-            "rating": 5,
-            "comment": "שולחן קפה מושלם לסלון.",
-            "date": "2024-12-01"
-        },
-        {
-            "id": 35,
-            "productId": 56,
-            "userId": 3,
-            "userName": "RoniC",
-            "rating": 4,
-            "comment": "כיסא מעוצב ואיכותי.",
-            "date": "2024-12-03"
-        },
-        {
-            "id": 36,
-            "productId": 63,
-            "userId": 5,
-            "userName": "MichalA",
-            "rating": 5,
-            "comment": "כיסאות מדהימים, נוחים מאוד.",
-            "date": "2024-12-05"
-        },
-        {
-            "id": 37,
-            "productId": 71,
-            "userId": 4,
-            "userName": "AlonM",
-            "rating": 5,
-            "comment": "בד הבוקלה פשוט מדהים למגע.",
-            "date": "2024-12-08"
-        },
-        {
-            "id": 38,
-            "productId": 79,
-            "userId": 2,
-            "userName": "DanaL",
-            "rating": 4,
-            "comment": "עיצוב נורדי קלאסי ויפה.",
-            "date": "2024-12-10"
-        },
-        {
-            "id": 39,
-            "productId": 88,
-            "userId": 3,
-            "userName": "RoniC",
-            "rating": 5,
-            "comment": "העור מרגיש יוקרתי מאוד.",
-            "date": "2024-12-12"
-        },
-        {
-            "id": 40,
-            "productId": 98,
-            "userId": 1,
-            "userName": "admin",
-            "rating": 5,
-            "comment": "כרית איכותית מאוד, מומלצת בחום.",
-            "date": "2024-12-15"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "firstName": "רבקה",
+      "lastName": "זלקינד",
+      "email": "admin@artliving.co.il",
+      "phone": "050-1234567",
+      "password": "Admin123!",
+      "userName": "admin",
+      "address": {
+        "street": "הרצל 1",
+        "city": "תל אביב",
+        "state": "ישראל",
+        "zip": "61000"
+      },
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "firstName": "דנה",
+      "lastName": "לוי",
+      "email": "dana@gmail.com",
+      "phone": "052-1112233",
+      "password": "Dana123!",
+      "userName": "DanaL",
+      "address": {
+        "street": "השיטה 4",
+        "city": "רמת גן",
+        "state": "ישראל",
+        "zip": "52233"
+      },
+      "isAdmin": false
+    },
+    {
+      "id": 3,
+      "firstName": "רוני",
+      "lastName": "כהן",
+      "email": "roni@art.com",
+      "phone": "054-4445566",
+      "password": "Roni456!",
+      "userName": "RoniC",
+      "address": {
+        "street": "דיזנגוף 100",
+        "city": "תל אביב",
+        "state": "ישראל",
+        "zip": "64321"
+      },
+      "isAdmin": false
+    },
+    {
+      "id": 4,
+      "firstName": "אלון",
+      "lastName": "מזרחי",
+      "email": "alon@walla.co.il",
+      "phone": "053-9998877",
+      "password": "Alon789!",
+      "userName": "AlonM",
+      "address": {
+        "street": "הנשיא 12",
+        "city": "חיפה",
+        "state": "ישראל",
+        "zip": "32000"
+      },
+      "isAdmin": false
+    },
+    {
+      "id": 5,
+      "firstName": "מיכל",
+      "lastName": "אברהם",
+      "email": "michal@gmail.com",
+      "phone": "050-7776655",
+      "password": "Michal321!",
+      "userName": "MichalA",
+      "address": {
+        "street": "ירושלים 5",
+        "city": "באר שבע",
+        "state": "ישראל",
+        "zip": "84100"
+      },
+      "isAdmin": false
+    },
+    {
+      "id": "55fc",
+      "firstName": "רבקה",
+      "lastName": "זלקינד",
+      "userName": "rivka8566",
+      "email": "rivka8566@gmail.com",
+      "phone": "0527185427",
+      "password": "BlaBla12!",
+      "address": {
+        "street": "",
+        "city": "פתח תקווה",
+        "state": "Israel",
+        "zip": "0000000"
+      },
+      "isAdmin": false
+    },
+    {
+      "id": "7cbe",
+      "firstName": "חיים",
+      "lastName": "שרה",
+      "userName": "sz0477",
+      "email": "sz0477@gmail.com",
+      "phone": "0548566535",
+      "password": "BlaBla12!",
+      "address": {
+        "street": "",
+        "city": "אשקלון",
+        "state": "Israel",
+        "zip": "0000000"
+      },
+      "isAdmin": false
+    },
+    {
+      "id": "6707",
+      "firstName": "כענכע",
+      "lastName": "כענכענ",
+      "userName": "adSED",
+      "email": "adSED@artliving.co.il",
+      "phone": "0527185427",
+      "password": "Admin123!",
+      "address": {
+        "street": "",
+        "city": "ראשון לציון",
+        "state": "Israel",
+        "zip": "0000000"
+      },
+      "isAdmin": false
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "ספת עור Zander - חום קוניאק",
+      "description": "ספת עור יוקרתית בעיצוב Mid-Century. עור איכותי המשתבח עם הזמן.",
+      "price": 8900,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/zander-leather-sofa-90-1-q.jpg",
+      "salesCount": 12
+    },
+    {
+      "id": 2,
+      "name": "מראת קשת Streamline - זהב",
+      "description": "מראת גוף מרהיבה עם מסגרת מתכת זהובה דקה.",
+      "price": 2100,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/streamline-oversized-wide-arch-metal-floor-mirror-q.jpg",
+      "salesCount": 45
+    },
+    {
+      "id": 3,
+      "name": "שולחן אוכל Tripod - עץ אגוז",
+      "description": "שולחן עגול בעיצוב נקי עם רגליים מעוצבות.",
+      "price": 3450,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/tripod-dining-table-30-walnut-q.jpg",
+      "salesCount": 28
+    },
+    {
+      "id": 4,
+      "name": "כיסא Hyde - בד טקסטורלי בז'",
+      "description": "כיסא ארגונומי המשלב נוחות וסטייל נורדי.",
+      "price": 980,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/hyde-dining-chair-q.jpg",
+      "salesCount": 89
+    },
+    {
+      "id": 5,
+      "name": "שידת כניסה Nolan - עץ דובדבן",
+      "description": "יחידת אחסון אלגנטית למבואה עם חריצים דקורטיביים.",
+      "price": 2400,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/build-your-own-nolan-entryway-collection-q(2).jpg",
+      "salesCount": 15
+    },
+    {
+      "id": 6,
+      "name": "סט מצעי Tencel - קרם פנינה",
+      "description": "מצעים רכים ומלטפים העשויים מסיבי טנסל.",
+      "price": 580,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
+      "salesCount": 120
+    },
+    {
+      "id": 7,
+      "name": "שולחן כתיבה Mid-Century - אלון",
+      "description": "שולחן עבודה רחב עם שלוש מגירות אחסון.",
+      "price": 3100,
+      "category": "חדר עבודה",
+      "imageUrl": "/assets/images/products/mid-century-desk-52-q(2).jpg",
+      "salesCount": 34
+    },
+    {
+      "id": 8,
+      "name": "ספת Harris מודולרית - בז'",
+      "description": "ספה רחבה ועמוקה בעיצוב עכשווי ומזמין.",
+      "price": 6400,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/harris-sofa-66-108-5-q.jpg",
+      "salesCount": 18
+    },
+    {
+      "id": 9,
+      "name": "כוורת ספרים Mid-Century",
+      "description": "יחידת מדפים פתוחה בגימור עץ חמים.",
+      "price": 2850,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/mid-century-bookshelf-w-drawer-38-q.jpg",
+      "salesCount": 14
+    },
+    {
+      "id": 10,
+      "name": "מראה א-סימטרית 'טיפה' - שחור",
+      "description": "מראת גוף ייחודית בעלת צורה אורגנית.",
+      "price": 1350,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/mid-century-asymmetrical-wood-floor-mirror-q(2).jpg",
+      "salesCount": 38
+    },
+    {
+      "id": 11,
+      "name": "ספת Harris - אפור פחם",
+      "description": "ספת תלת-מושבית נוחה במיוחד בעיצוב נקי.",
+      "price": 5900,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/harris-sofa-66-108-q.jpg",
+      "salesCount": 10
+    },
+    {
+      "id": 12,
+      "name": "כיסא Anton - ריפוד שמנת",
+      "description": "כיסא אוכל אלגנטי עם רגלי עץ כהות.",
+      "price": 1150,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/anton-dining-chair-6-q.jpg",
+      "salesCount": 55
+    },
+    {
+      "id": 13,
+      "name": "שידת Nolan רחבה - אגוז",
+      "description": "פתרון אחסון יוקרתי עם חזית מחורצת.",
+      "price": 3200,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/img3j(1).jpg",
+      "salesCount": 22
+    },
+    {
+      "id": 14,
+      "name": "מיטת Laurent - בד בוצ'לה",
+      "description": "מיטה זוגית בעיצוב רך ומעוגל.",
+      "price": 4600,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/laurent-bed-10-q.jpg",
+      "salesCount": 19
+    },
+    {
+      "id": 15,
+      "name": "מראת קיר Elinor - רטאן",
+      "description": "מראה עגולה בעבודת יד מחומרים טבעיים.",
+      "price": 790,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/elinor-rattan-wall-mirror-q.jpg",
+      "salesCount": 60
+    },
+    {
+      "id": 16,
+      "name": "שמיכת HydroCool יוקרתית",
+      "description": "טכנולוגיית קירור אקטיבית לשינה נעימה.",
+      "price": 850,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/hydrocool-cooling-down-alternative-duvet-insert-c.jpg",
+      "salesCount": 150
+    },
+    {
+      "id": 17,
+      "name": "ספסל Abbott - עץ אלון",
+      "description": "ספסל כניסה עם מושב קלוע בעבודת יד.",
+      "price": 1350,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/abbott-bench-q.jpg",
+      "salesCount": 30
+    },
+    {
+      "id": 18,
+      "name": "מראה מלבנית שחורה",
+      "description": "מראה גדולה בעיצוב מינימליסטי.",
+      "price": 950,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/metal-frame-rectangular-wall-mirror-q.jpg",
+      "salesCount": 42
+    },
+    {
+      "id": 19,
+      "name": "כרית גוף פשתן אירופאי",
+      "description": "כרית ארוכה מ-100% פשתן איכותי.",
+      "price": 180,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/european-flax-linen-body-pillow-cover-q.jpg",
+      "salesCount": 75
+    },
+    {
+      "id": 20,
+      "name": "שולחן קפה גיאומטרי - אלון",
+      "description": "שולחן נמוך וייחודי המדגיש את העץ.",
+      "price": 1850,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/img11j.jpg",
+      "salesCount": 26
+    },
+    {
+      "id": 21,
+      "name": "ספת עור Zander - שחור",
+      "description": "גרסה מודרנית ויוקרתית בעור שחור.",
+      "price": 9200,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/zander-leather-sofa-90-1-q.jpg",
+      "salesCount": 8
+    },
+    {
+      "id": 22,
+      "name": "מראת Streamline - כסף",
+      "description": "מראת גוף רחבה בגימור כרום מבריק.",
+      "price": 2000,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/streamline-oversized-wide-arch-metal-floor-mirror-q.jpg",
+      "salesCount": 21
+    },
+    {
+      "id": 23,
+      "name": "כיסא Hyde - עור קאמל",
+      "description": "כיסא אוכל מרופד בעור איכותי ורך.",
+      "price": 1400,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/hyde-leather-dining-chair-q.jpg",
+      "salesCount": 33
+    },
+    {
+      "id": 24,
+      "name": "סט מצעי Tencel - אפור כחלחל",
+      "description": "מצעי טנסל יוקרתיים בגוון מרגיע.",
+      "price": 580,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
+      "salesCount": 45
+    },
+    {
+      "id": 25,
+      "name": "שידת צד Nolan - קטן",
+      "description": "שידת לילה תואמת לסדרת נולאן.",
+      "price": 1100,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/img44j.jpg",
+      "salesCount": 52
+    },
+    {
+      "id": 26,
+      "name": "מראה עגולה רצועת עור",
+      "description": "מראת קיר נתלית בעיצוב נורדי.",
+      "price": 750,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/modern-hanging-round-wall-mirror-w-leather-strap-q.jpg",
+      "salesCount": 67
+    },
+    {
+      "id": 27,
+      "name": "כיסא משרדי Swivel",
+      "description": "כיסא עבודה ארגונומי עם רגלי עץ.",
+      "price": 1600,
+      "category": "חדר עבודה",
+      "imageUrl": "/assets/images/products/mid-century-swivel-office-chair-wood-legs-q.jpg",
+      "salesCount": 38
+    },
+    {
+      "id": 28,
+      "name": "ספת Harris - בז' בהיר",
+      "description": "ספה רחבה בריפוד בד נעים למגע.",
+      "price": 6200,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/harris-sofa-66-108-5-q.jpg",
+      "salesCount": 14
+    },
+    {
+      "id": 29,
+      "name": "מראת חלון Raven - שחור",
+      "description": "מראה מחולקת המדמה חלון מעוצב.",
+      "price": 1550,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/raven-window-metal-wall-mirrors-q.jpg",
+      "salesCount": 29
+    },
+    {
+      "id": 30,
+      "name": "שולחן אוכל Tripod - אלון",
+      "description": "גרסת עץ האלון הבהיר לשולחן טריפוד.",
+      "price": 3200,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/tripod-dining-table-30-walnut-q.jpg",
+      "salesCount": 17
+    },
+    {
+      "id": 31,
+      "name": "שידת Nolan כפולה",
+      "description": "שידה רחבה במיוחד עם שטח אחסון גדול.",
+      "price": 3800,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/img3j(1).jpg",
+      "salesCount": 11
+    },
+    {
+      "id": 32,
+      "name": "מיטת Laurent - בז' נייטרלי",
+      "description": "מיטה מעוצבת בבד עמיד וקל לניקוי.",
+      "price": 4400,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/laurent-bed-10-q.jpg",
+      "salesCount": 25
+    },
+    {
+      "id": 33,
+      "name": "מראה אסימטרית - עץ טבעי",
+      "description": "מסגרת עץ דקה בצורה אורגנית מיוחדת.",
+      "price": 1400,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/mid-century-asymmetrical-wood-floor-mirror-q(2).jpg",
+      "salesCount": 19
+    },
+    {
+      "id": 34,
+      "name": "כיסא Anton - עץ אלון",
+      "description": "כיסא אוכל בסגנון מיד-סנצ'ורי קלאסי.",
+      "price": 1050,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/anton-dining-chair-6-q.jpg",
+      "salesCount": 42
+    },
+    {
+      "id": 35,
+      "name": "ספת עור Zander - קוניאק בהיר",
+      "description": "גוון קלאסי ויוקרתי לספת זאנדר.",
+      "price": 8900,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/zander-leather-sofa-90-1-q.jpg",
+      "salesCount": 6
+    },
+    {
+      "id": 36,
+      "name": "שידת לילה Nolan",
+      "description": "שידה קטנה עם מגירה אחת לחדר השינה.",
+      "price": 950,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/img44j.jpg",
+      "salesCount": 58
+    },
+    {
+      "id": 37,
+      "name": "שולחן כתיבה - אגוז כהה",
+      "description": "שולחן עבודה מעוצב מעץ עשיר.",
+      "price": 3300,
+      "category": "חדר עבודה",
+      "imageUrl": "/assets/images/products/mid-century-desk-52-q(2).jpg",
+      "salesCount": 13
+    },
+    {
+      "id": 38,
+      "name": "מראה Streamline - ברונזה",
+      "description": "מראה יוקרתית בגימור מתכת כהה.",
+      "price": 2150,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/streamline-oversized-wide-arch-metal-floor-mirror-q.jpg",
+      "salesCount": 24
+    },
+    {
+      "id": 39,
+      "name": "ספת Harris - כחול נייבי",
+      "description": "ספה בריפוד בד כהה ועמיד ללכלוך.",
+      "price": 6100,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/harris-sofa-66-108-q.jpg",
+      "salesCount": 16
+    },
+    {
+      "id": 40,
+      "name": "כיסא Hyde - בד אפור",
+      "description": "כיסא אוכל מרופד בבד טקסטורלי אפור.",
+      "price": 1020,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/hyde-dining-chair-q.jpg",
+      "salesCount": 37
+    },
+    {
+      "id": 41,
+      "name": "כוורת ספרים - אגוז",
+      "description": "מדפי ספרים מעץ אגוז איכותי.",
+      "price": 2950,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/mid-century-bookshelf-w-drawer-38-q.jpg",
+      "salesCount": 9
+    },
+    {
+      "id": 42,
+      "name": "מצעי Tencel - לבן",
+      "description": "סט מצעים לבן נקי ויוקרתי.",
+      "price": 580,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
+      "salesCount": 88
+    },
+    {
+      "id": 43,
+      "name": "מראה עגולה Elinor - לבן",
+      "description": "מסגרת רטאן צבועה בלבן למראה מודרני.",
+      "price": 820,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/elinor-rattan-wall-mirror-q.jpg",
+      "salesCount": 31
+    },
+    {
+      "id": 44,
+      "name": "ספסל Abbott - עץ כהה",
+      "description": "ספסל אחסון בעיצוב עץ כהה ויוקרתי.",
+      "price": 1450,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/abbott-bench-q.jpg",
+      "salesCount": 22
+    },
+    {
+      "id": 45,
+      "name": "שידת Nolan - חזית לבנה",
+      "description": "שילוב של עץ וצבע לבן בשידת נולאן.",
+      "price": 2600,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/build-your-own-nolan-entryway-collection-q(2).jpg",
+      "salesCount": 18
+    },
+    {
+      "id": 46,
+      "name": "מראה מלבנית - זהב",
+      "description": "מראת קיר גדולה במסגרת זהב מוברש.",
+      "price": 1050,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/metal-frame-rectangular-wall-mirror-q.jpg",
+      "salesCount": 54
+    },
+    {
+      "id": 47,
+      "name": "מיטת Laurent - אפור בהיר",
+      "description": "מיטה מרופדת בבד בוצ'לה אפור.",
+      "price": 4600,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/laurent-bed-10-q.jpg",
+      "salesCount": 12
+    },
+    {
+      "id": 48,
+      "name": "שולחן קפה - אגוז",
+      "description": "שולחן סלון נמוך מעץ אגוז עשיר.",
+      "price": 1950,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/img11j.jpg",
+      "salesCount": 27
+    },
+    {
+      "id": 49,
+      "name": "כיסא Anton - בד אפור",
+      "description": "כיסא אוכל מרופד עם רגלי עץ אלון.",
+      "price": 1100,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/anton-dining-chair-6-q.jpg",
+      "salesCount": 49
+    },
+    {
+      "id": 50,
+      "name": "ספת Harris - ירוק זית",
+      "description": "ספה בצבע ייחודי המכניסה חיים לסלון.",
+      "price": 6300,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/harris-sofa-66-108-q.jpg",
+      "salesCount": 15
+    },
+    {
+      "id": 51,
+      "name": "מראת Raven - זהב",
+      "description": "גרסת הזהב למראת החלון המפורסמת.",
+      "price": 1650,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/raven-window-metal-wall-mirrors-q.jpg",
+      "salesCount": 23
+    },
+    {
+      "id": 52,
+      "name": "שולחן כתיבה - לבן",
+      "description": "שולחן עבודה נקי ומודרני בצבע לבן.",
+      "price": 2900,
+      "category": "חדר עבודה",
+      "imageUrl": "/assets/images/products/mid-century-desk-52-q(2).jpg",
+      "salesCount": 36
+    },
+    {
+      "id": 53,
+      "name": "שידת Nolan - 3 מגירות",
+      "description": "שידת אחסון גבוהה וצרה לסדרת נולאן.",
+      "price": 1800,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/img3j(1).jpg",
+      "salesCount": 41
+    },
+    {
+      "id": 54,
+      "name": "כרית גוף - פשתן כחול",
+      "description": "כרית פינוק בציפית פשתן כחולה.",
+      "price": 190,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/european-flax-linen-body-pillow-cover-q.jpg",
+      "salesCount": 63
+    },
+    {
+      "id": 55,
+      "name": "מראה עגולה - מסגרת עץ",
+      "description": "מראת קיר קלאסית עם מסגרת עץ רחבה.",
+      "price": 850,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/elinor-rattan-wall-mirror-q.jpg",
+      "salesCount": 47
+    },
+    {
+      "id": 56,
+      "name": "כיסא Hyde - עור שחור",
+      "description": "כיסא אוכל יוקרתי בעור שחור מט.",
+      "price": 1450,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/hyde-leather-dining-chair-q.jpg",
+      "salesCount": 12
+    },
+    {
+      "id": 57,
+      "name": "סט מצעי Tencel - ירוק מרווה",
+      "description": "גוון טבעי ומרגיע למצעי הטנסל.",
+      "price": 580,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
+      "salesCount": 39
+    },
+    {
+      "id": 58,
+      "name": "ספת Harris - אפור בהיר",
+      "description": "גרסה רכה ובהירה של ספת האריס.",
+      "price": 6000,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/harris-sofa-66-108-q.jpg",
+      "salesCount": 28
+    },
+    {
+      "id": 59,
+      "name": "מראת קשת - שחור",
+      "description": "מראת גוף רחבה במסגרת שחורה.",
+      "price": 1950,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/streamline-oversized-wide-arch-metal-floor-mirror-q.jpg",
+      "salesCount": 35
+    },
+    {
+      "id": 60,
+      "name": "שידת Nolan - עץ אלון",
+      "description": "שידת כניסה בגימור עץ אלון בהיר.",
+      "price": 2300,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/build-your-own-nolan-entryway-collection-q(2).jpg",
+      "salesCount": 21
+    },
+    {
+      "id": 61,
+      "name": "שולחן אוכל - קוטר 120",
+      "description": "שולחן עגול גדול המתאים ל-4 סועדים.",
+      "price": 3800,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/tripod-dining-table-30-walnut-q.jpg",
+      "salesCount": 14
+    },
+    {
+      "id": 62,
+      "name": "מראה אסימטרית - זהב",
+      "description": "מסגרת זהב דקה בצורה אורגנית.",
+      "price": 1450,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/mid-century-asymmetrical-wood-floor-mirror-q(2).jpg",
+      "salesCount": 26
+    },
+    {
+      "id": 63,
+      "name": "כיסא Anton - עץ כהה",
+      "description": "כיסא אוכל בעיצוב עץ אגוז עשיר.",
+      "price": 1150,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/anton-dining-chair-6-q.jpg",
+      "salesCount": 33
+    },
+    {
+      "id": 64,
+      "name": "שמיכת HydroCool - זוגית",
+      "description": "שמיכת קירור במידה זוגית רחבה.",
+      "price": 950,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/hydrocool-cooling-down-alternative-duvet-insert-c.jpg",
+      "salesCount": 71
+    },
+    {
+      "id": 65,
+      "name": "כוורת Mid-Century - רחבה",
+      "description": "יחידת מדפים רחבה עם שטח תצוגה גדול.",
+      "price": 3400,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/mid-century-bookshelf-w-drawer-38-q.jpg",
+      "salesCount": 8
+    },
+    {
+      "id": 66,
+      "name": "ספת עור Zander - אפור",
+      "description": "ספת עור בגוון אפור מעושן יוקרתי.",
+      "price": 9100,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/zander-leather-sofa-90-1-q.jpg",
+      "salesCount": 4
+    },
+    {
+      "id": 67,
+      "name": "מצעי Tencel - ורוד עתיק",
+      "description": "גוון רומנטי ויוקרתי לחדר השינה.",
+      "price": 580,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
+      "salesCount": 42
+    },
+    {
+      "id": 68,
+      "name": "שידת לילה Nolan - לבן",
+      "description": "שידת צד קטנה בגימור לבן ועץ.",
+      "price": 1000,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/img44j.jpg",
+      "salesCount": 55
+    },
+    {
+      "id": 69,
+      "name": "מראה עגולה - רצועת בד",
+      "description": "מראת קיר נתלית בגרסת רצועה בהירה.",
+      "price": 720,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/modern-hanging-round-wall-mirror-w-leather-strap-q.jpg",
+      "salesCount": 61
+    },
+    {
+      "id": 70,
+      "name": "שולחן כתיבה - אפור מט",
+      "description": "שולחן עבודה מודרני בצבע אפור.",
+      "price": 3000,
+      "category": "חדר עבודה",
+      "imageUrl": "/assets/images/products/mid-century-desk-52-q(2).jpg",
+      "salesCount": 15
+    },
+    {
+      "id": 71,
+      "name": "ספת Harris - בד בוקלה",
+      "description": "ספה בריפוד בד בוקלה טרנדי ונעים.",
+      "price": 6800,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/harris-sofa-66-108-5-q.jpg",
+      "salesCount": 24
+    },
+    {
+      "id": 72,
+      "name": "מראת חלון Raven - כסף",
+      "description": "מסגרת כסף למראת החלון המעוצבת.",
+      "price": 1600,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/raven-window-metal-wall-mirrors-q.jpg",
+      "salesCount": 18
+    },
+    {
+      "id": 73,
+      "name": "כיסא Hyde - עור חום",
+      "description": "הגרסה הקלאסית ביותר של כיסא הייד.",
+      "price": 1380,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/hyde-leather-dining-chair-q.jpg",
+      "salesCount": 50
+    },
+    {
+      "id": 74,
+      "name": "כרית גוף - פשתן טבעי",
+      "description": "פשתן גולמי ואיכותי למראה אורגני.",
+      "price": 180,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/european-flax-linen-body-pillow-cover-q.jpg",
+      "salesCount": 92
+    },
+    {
+      "id": 75,
+      "name": "שידת Nolan - ארון כפול",
+      "description": "יחידת אחסון רחבה עם דלתות ומדפים.",
+      "price": 3100,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/img3j(1).jpg",
+      "salesCount": 13
+    },
+    {
+      "id": 76,
+      "name": "מיטת Laurent - אפור פחם",
+      "description": "מיטה זוגית בריפוד כהה ודרמטי.",
+      "price": 4700,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/laurent-bed-10-q.jpg",
+      "salesCount": 7
+    },
+    {
+      "id": 77,
+      "name": "שולחן קפה - לבן שיש",
+      "description": "שולחן סלון המשלב עץ ומשטח דמוי שיש.",
+      "price": 2200,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/img11j.jpg",
+      "salesCount": 31
+    },
+    {
+      "id": 78,
+      "name": "מראה Streamline - שחור מט",
+      "description": "המסגרת המבוקשת ביותר לסדרת סטרים-ליין.",
+      "price": 2000,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/streamline-oversized-wide-arch-metal-floor-mirror-q.jpg",
+      "salesCount": 64
+    },
+    {
+      "id": 79,
+      "name": "כיסא Anton - בד בז'",
+      "description": "כיסא אוכל מרופד בגוון נייטרלי.",
+      "price": 1080,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/anton-dining-chair-6-q.jpg",
+      "salesCount": 46
+    },
+    {
+      "id": 80,
+      "name": "ספת Harris - אפור כהה",
+      "description": "ספה עמוקה ומרווחת לאירוח מושלם.",
+      "price": 6100,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/harris-sofa-66-108-q.jpg",
+      "salesCount": 22
+    },
+    {
+      "id": 81,
+      "name": "שידת Nolan - גובה בינוני",
+      "description": "שידת אחסון ורסטילית לכל חדר.",
+      "price": 1950,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/build-your-own-nolan-entryway-collection-q(2).jpg",
+      "salesCount": 38
+    },
+    {
+      "id": 82,
+      "name": "מראה עגולה Elinor - עץ אלון",
+      "description": "מראה בעיצוב טבעי המשתלבת בכל חלל.",
+      "price": 880,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/elinor-rattan-wall-mirror-q.jpg",
+      "salesCount": 19
+    },
+    {
+      "id": 83,
+      "name": "שולחן אוכל Tripod - שחור",
+      "description": "שולחן אוכל דרמטי בעץ מושחר.",
+      "price": 3600,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/tripod-dining-table-30-walnut-q.jpg",
+      "salesCount": 5
+    },
+    {
+      "id": 84,
+      "name": "מצעי Tencel - אפור בהיר",
+      "description": "שינה רכה במצעים בגוון מודרני.",
+      "price": 580,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
+      "salesCount": 53
+    },
+    {
+      "id": 85,
+      "name": "מראה אסימטרית - שחור דק",
+      "description": "מסגרת מתכת שחורה למראה מינימליסטי.",
+      "price": 1380,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/mid-century-asymmetrical-wood-floor-mirror-q(2).jpg",
+      "salesCount": 44
+    },
+    {
+      "id": 86,
+      "name": "ספסל Abbott - ריפוד בד",
+      "description": "ספסל כניסה עם מושב מרופד ונוח.",
+      "price": 1500,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/abbott-bench-q.jpg",
+      "salesCount": 16
+    },
+    {
+      "id": 87,
+      "name": "שידת צד Nolan - 2 מגירות",
+      "description": "שידת לילה רחבה יותר לאחסון נוסף.",
+      "price": 1250,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/img44j.jpg",
+      "salesCount": 29
+    },
+    {
+      "id": 88,
+      "name": "ספת עור Zander - שוקולד",
+      "description": "עור בגוון חום כהה ועמוק.",
+      "price": 9300,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/zander-leather-sofa-90-1-q.jpg",
+      "salesCount": 3
+    },
+    {
+      "id": 89,
+      "name": "כיסא Anton - עור חום",
+      "description": "כיסא אוכל יוקרתי המשלב עץ ועור.",
+      "price": 1550,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/anton-dining-chair-6-q.jpg",
+      "salesCount": 27
+    },
+    {
+      "id": 90,
+      "name": "מראה חלון Raven - לבן",
+      "description": "מראה מחולקת במסגרת לבנה עדינה.",
+      "price": 1580,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/raven-window-metal-wall-mirrors-q.jpg",
+      "salesCount": 11
+    },
+    {
+      "id": 91,
+      "name": "שולחן כתיבה - עץ ומתכת",
+      "description": "שולחן עבודה בסגנון תעשייתי לופט.",
+      "price": 3100,
+      "category": "חדר עבודה",
+      "imageUrl": "/assets/images/products/mid-century-desk-52-q(2).jpg",
+      "salesCount": 22
+    },
+    {
+      "id": 92,
+      "name": "מצעי Tencel - חרדל",
+      "description": "צבע נועז וחם לקולקציית המצעים.",
+      "price": 580,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/silky-tencel-sheet-set-c.jpg",
+      "salesCount": 34
+    },
+    {
+      "id": 93,
+      "name": "מראה עגולה Elinor - אגוז",
+      "description": "מסגרת עץ אגוז למראה יוקרתי וחם.",
+      "price": 920,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/elinor-rattan-wall-mirror-q.jpg",
+      "salesCount": 14
+    },
+    {
+      "id": 94,
+      "name": "שידת Nolan - חזית שחורה",
+      "description": "שילוב מודרני של עץ וחזית שחורה.",
+      "price": 2700,
+      "category": "אחסון",
+      "imageUrl": "/assets/images/products/build-your-own-nolan-entryway-collection-q(2).jpg",
+      "salesCount": 16
+    },
+    {
+      "id": 95,
+      "name": "ספת Harris - צהוב אוקר",
+      "description": "פריט הצהרה צבעוני לחדר המגורים.",
+      "price": 6400,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/harris-sofa-66-108-q.jpg",
+      "salesCount": 9
+    },
+    {
+      "id": 96,
+      "name": "כיסא Hyde - בד כחול",
+      "description": "כיסא אוכל בריפוד בד כחול עמוק.",
+      "price": 1050,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/hyde-dining-chair-q.jpg",
+      "salesCount": 28
+    },
+    {
+      "id": 97,
+      "name": "מראה Streamline - גודל XL",
+      "description": "הגרסה הגדולה ביותר למראת הגוף.",
+      "price": 2400,
+      "category": "אביזרים",
+      "imageUrl": "/assets/images/products/streamline-oversized-wide-arch-metal-floor-mirror-q.jpg",
+      "salesCount": 39
+    },
+    {
+      "id": 98,
+      "name": "כרית גוף - פשתן לבן",
+      "description": "הגרסה הלבנה והקלאסית לכרית הגוף.",
+      "price": 180,
+      "category": "חדר שינה",
+      "imageUrl": "/assets/images/products/european-flax-linen-body-pillow-cover-q.jpg",
+      "salesCount": 110
+    },
+    {
+      "id": 99,
+      "name": "שולחן אוכל Tripod - קוטר 100",
+      "description": "שולחן אוכל קומפקטי לחללים קטנים.",
+      "price": 2900,
+      "category": "פינת אוכל",
+      "imageUrl": "/assets/images/products/tripod-dining-table-30-walnut-q.jpg",
+      "salesCount": 25
+    },
+    {
+      "id": 100,
+      "name": "ספת Harris - בז' כהה",
+      "description": "ספה נוחה ופרקטית לשימוש יומיומי.",
+      "price": 6000,
+      "category": "סלון",
+      "imageUrl": "/assets/images/products/harris-sofa-66-108-5-q.jpg",
+      "salesCount": 48
+    }
+  ],
+  "opinions": [
+    {
+      "id": 1,
+      "productId": 1,
+      "userId": 2,
+      "userName": "DanaL",
+      "rating": 5,
+      "comment": "ספה מדהימה, העור מרגיש איכותי מאוד.",
+      "date": "2024-05-15"
+    },
+    {
+      "id": 2,
+      "productId": 4,
+      "userId": 3,
+      "userName": "RoniC",
+      "rating": 4,
+      "comment": "כיסאות יפים מאוד, מוסיפים המון סטייל לפינת האוכל.",
+      "date": "2024-06-10"
+    },
+    {
+      "id": 3,
+      "productId": 6,
+      "userId": 5,
+      "userName": "MichalA",
+      "rating": 5,
+      "comment": "המצעים הכי נעימים שקניתי אי פעם, ממליצה בחום.",
+      "date": "2024-07-02"
+    },
+    {
+      "id": 4,
+      "productId": 2,
+      "userId": 4,
+      "userName": "AlonM",
+      "rating": 5,
+      "comment": "מראה ענקית ומרשימה, שדרגה את כל הכניסה לבית.",
+      "date": "2024-07-15"
+    },
+    {
+      "id": 5,
+      "productId": 7,
+      "userId": 2,
+      "userName": "DanaL",
+      "rating": 4,
+      "comment": "שולחן עבודה מעולה, הגיע מהר ובאיכות מצוינת.",
+      "date": "2024-08-01"
+    },
+    {
+      "id": 6,
+      "productId": 10,
+      "userId": 3,
+      "userName": "RoniC",
+      "rating": 5,
+      "comment": "המראה הזו היא פשוט יצירת אמנות.",
+      "date": "2024-08-12"
+    },
+    {
+      "id": 7,
+      "productId": 15,
+      "userId": 5,
+      "userName": "MichalA",
+      "rating": 4,
+      "comment": "מראה יפה, מוסיפה חמימות לחדר.",
+      "date": "2024-08-20"
+    },
+    {
+      "id": 8,
+      "productId": 3,
+      "userId": 4,
+      "userName": "AlonM",
+      "rating": 5,
+      "comment": "שולחן יציב ויפהפה, מתנקה בקלות.",
+      "date": "2024-09-05"
+    },
+    {
+      "id": 9,
+      "productId": 1,
+      "userId": 1,
+      "userName": "admin",
+      "rating": 5,
+      "comment": "מוצר הדגל שלנו, איכות ללא פשרות.",
+      "date": "2024-09-10"
+    },
+    {
+      "id": 10,
+      "productId": 8,
+      "userId": 2,
+      "userName": "DanaL",
+      "rating": 5,
+      "comment": "הספה המודולרית פשוט גאונית.",
+      "date": "2024-09-15"
+    },
+    {
+      "id": 11,
+      "productId": 12,
+      "userId": 3,
+      "userName": "RoniC",
+      "rating": 4,
+      "comment": "כיסא נוח מאוד לעבודה ממושכת.",
+      "date": "2024-09-20"
+    },
+    {
+      "id": 12,
+      "productId": 18,
+      "userId": 5,
+      "userName": "MichalA",
+      "rating": 5,
+      "comment": "עיצוב נקי ויוקרתי, בדיוק מה שחיפשתי.",
+      "date": "2024-09-25"
+    },
+    {
+      "id": 13,
+      "productId": 25,
+      "userId": 4,
+      "userName": "AlonM",
+      "rating": 5,
+      "comment": "איכות בנייה מעולה, רהיט לכל החיים.",
+      "date": "2024-10-01"
+    },
+    {
+      "id": 14,
+      "productId": 30,
+      "userId": 2,
+      "userName": "DanaL",
+      "rating": 5,
+      "comment": "שולחן מרשים שגורף המון מחמאות.",
+      "date": "2024-10-05"
+    },
+    {
+      "id": 15,
+      "productId": 35,
+      "userId": 3,
+      "userName": "RoniC",
+      "rating": 4,
+      "comment": "צבע העור מדויק ומרגיש נעים למגע.",
+      "date": "2024-10-10"
+    },
+    {
+      "id": 16,
+      "productId": 42,
+      "userId": 5,
+      "userName": "MichalA",
+      "rating": 5,
+      "comment": "הבד הכי איכותי שיש, לא מתקמט בקלות.",
+      "date": "2024-10-15"
+    },
+    {
+      "id": 17,
+      "productId": 50,
+      "userId": 4,
+      "userName": "AlonM",
+      "rating": 4,
+      "comment": "ספה יפהפייה, צבע מיוחד מאוד.",
+      "date": "2024-10-18"
+    },
+    {
+      "id": 18,
+      "productId": 55,
+      "userId": 2,
+      "userName": "DanaL",
+      "rating": 5,
+      "comment": "מראה גדולה שנותנת תחושת מרחב.",
+      "date": "2024-10-20"
+    },
+    {
+      "id": 19,
+      "productId": 60,
+      "userId": 3,
+      "userName": "RoniC",
+      "rating": 5,
+      "comment": "אחסון נוח וחכם, הכל מסודר עכשיו.",
+      "date": "2024-10-22"
+    },
+    {
+      "id": 20,
+      "productId": 65,
+      "userId": 5,
+      "userName": "MichalA",
+      "rating": 4,
+      "comment": "רהיט פרקטי ומעוצב.",
+      "date": "2024-10-25"
+    },
+    {
+      "id": 21,
+      "productId": 70,
+      "userId": 4,
+      "userName": "AlonM",
+      "rating": 5,
+      "comment": "שולחן כתיבה מצוין, גודל מושלם.",
+      "date": "2024-10-28"
+    },
+    {
+      "id": 22,
+      "productId": 75,
+      "userId": 2,
+      "userName": "DanaL",
+      "rating": 5,
+      "comment": "שידה יוקרתית שמשדרגת את כל החדר.",
+      "date": "2024-11-01"
+    },
+    {
+      "id": 23,
+      "productId": 80,
+      "userId": 3,
+      "userName": "RoniC",
+      "rating": 4,
+      "comment": "נוחות מקסימלית, ממליץ בחום.",
+      "date": "2024-11-03"
+    },
+    {
+      "id": 24,
+      "productId": 85,
+      "userId": 5,
+      "userName": "MichalA",
+      "rating": 5,
+      "comment": "מראה ייחודית, פריט אמנות לכל דבר.",
+      "date": "2024-11-05"
+    },
+    {
+      "id": 25,
+      "productId": 90,
+      "userId": 4,
+      "userName": "AlonM",
+      "rating": 4,
+      "comment": "איכות גבוהה מאוד, שירות מעולה.",
+      "date": "2024-11-08"
+    },
+    {
+      "id": 26,
+      "productId": 95,
+      "userId": 2,
+      "userName": "DanaL",
+      "rating": 5,
+      "comment": "הצבע פשוט מדהים ומוסיף המון אור.",
+      "date": "2024-11-10"
+    },
+    {
+      "id": 27,
+      "productId": 100,
+      "userId": 3,
+      "userName": "RoniC",
+      "rating": 5,
+      "comment": "סגירה מושלמת לעיצוב הבית.",
+      "date": "2024-11-12"
+    },
+    {
+      "id": 28,
+      "productId": 5,
+      "userId": 5,
+      "userName": "MichalA",
+      "rating": 4,
+      "comment": "שידה יפה ופונקציונלית.",
+      "date": "2024-11-15"
+    },
+    {
+      "id": 29,
+      "productId": 13,
+      "userId": 4,
+      "userName": "AlonM",
+      "rating": 5,
+      "comment": "אחסון מצוין ועיצוב נקי.",
+      "date": "2024-11-18"
+    },
+    {
+      "id": 30,
+      "productId": 21,
+      "userId": 2,
+      "userName": "DanaL",
+      "rating": 5,
+      "comment": "העור השחור נראה פשוט מדהים.",
+      "date": "2024-11-20"
+    },
+    {
+      "id": 31,
+      "productId": 27,
+      "userId": 3,
+      "userName": "RoniC",
+      "rating": 5,
+      "comment": "הכיסא הכי טוב שהיה לי למשרד.",
+      "date": "2024-11-22"
+    },
+    {
+      "id": 32,
+      "productId": 33,
+      "userId": 5,
+      "userName": "MichalA",
+      "rating": 4,
+      "comment": "מראה מרשימה ואיכותית.",
+      "date": "2024-11-25"
+    },
+    {
+      "id": 33,
+      "productId": 40,
+      "userId": 4,
+      "userName": "AlonM",
+      "rating": 5,
+      "comment": "נוח מאוד ויפה מאוד.",
+      "date": "2024-11-28"
+    },
+    {
+      "id": 34,
+      "productId": 48,
+      "userId": 2,
+      "userName": "DanaL",
+      "rating": 5,
+      "comment": "שולחן קפה מושלם לסלון.",
+      "date": "2024-12-01"
+    },
+    {
+      "id": 35,
+      "productId": 56,
+      "userId": 3,
+      "userName": "RoniC",
+      "rating": 4,
+      "comment": "כיסא מעוצב ואיכותי.",
+      "date": "2024-12-03"
+    },
+    {
+      "id": 36,
+      "productId": 63,
+      "userId": 5,
+      "userName": "MichalA",
+      "rating": 5,
+      "comment": "כיסאות מדהימים, נוחים מאוד.",
+      "date": "2024-12-05"
+    },
+    {
+      "id": 37,
+      "productId": 71,
+      "userId": 4,
+      "userName": "AlonM",
+      "rating": 5,
+      "comment": "בד הבוקלה פשוט מדהים למגע.",
+      "date": "2024-12-08"
+    },
+    {
+      "id": 38,
+      "productId": 79,
+      "userId": 2,
+      "userName": "DanaL",
+      "rating": 4,
+      "comment": "עיצוב נורדי קלאסי ויפה.",
+      "date": "2024-12-10"
+    },
+    {
+      "id": 39,
+      "productId": 88,
+      "userId": 3,
+      "userName": "RoniC",
+      "rating": 5,
+      "comment": "העור מרגיש יוקרתי מאוד.",
+      "date": "2024-12-12"
+    },
+    {
+      "id": 40,
+      "productId": 98,
+      "userId": 1,
+      "userName": "admin",
+      "rating": 5,
+      "comment": "כרית איכותית מאוד, מומלצת בחום.",
+      "date": "2024-12-15"
+    }
+  ]
 }
