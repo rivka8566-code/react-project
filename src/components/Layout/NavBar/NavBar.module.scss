@@ -20,7 +20,7 @@
       text-decoration: none;
       padding: 0.4rem;
       border-radius: 4px;
-      background-color: #8B7355;
+      background-color: #C8A882;
       color: white;
       display: flex;
       align-items: center;
@@ -55,41 +55,112 @@
     }
   }
 
-  .search {
+  .searchContainer {
     flex: 1;
     max-width: 500px;
-    display: flex;
-    align-items: center;
     margin: 0 2rem;
     position: relative;
 
-    .searchIcon {
-      position: absolute;
-      right: 1rem;
-      color: #999;
-      font-size: 1.2rem;
-      pointer-events: none;
+    .search {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .searchIcon {
+        position: absolute;
+        right: 1rem;
+        color: #999;
+        font-size: 1.2rem;
+        pointer-events: none;
+      }
+
+      input {
+        flex: 1;
+        width: 100%;
+        padding: 0.75rem 3rem 0.75rem 1rem;
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        font-size: 1rem;
+        outline: none;
+        text-align: right;
+        background-color: #f5f5f5;
+        transition: all 0.3s;
+
+        &:focus {
+          border-color: #C8A882;
+          background-color: #fff;
+        }
+
+        &::placeholder {
+          color: #999;
+        }
+      }
     }
 
-    input {
-      flex: 1;
-      padding: 0.75rem 3rem 0.75rem 1rem;
+    .searchResults {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
       border: 1px solid #ddd;
-      border-radius: 25px;
-      font-size: 1rem;
-      outline: none;
-      text-align: right;
-      background-color: #f5f5f5;
-      transition: all 0.3s;
+      border-radius: 8px;
+      margin-top: 8px;
+      max-height: 400px;
+      overflow-y: auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
 
-      &:focus {
-        border-color: #8B7355;
-        background-color: #fff;
-      }
+      .resultItem {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #f0f0f0;
+        transition: background 0.2s;
 
-      &::placeholder {
-        color: #999;
+        &:hover {
+          background: #f9f9f9;
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        img {
+          width: 60px;
+          height: 60px;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+
+        .resultInfo {
+          flex: 1;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .resultName {
+            font-size: 14px;
+            color: #333;
+          }
+
+          .resultPrice {
+            font-size: 16px;
+            font-weight: 600;
+            color: #C8A882;
+          }
+        }
       }
+    }
+
+    .noResults {
+      padding: 12px;
+      text-align: center;
+      color: #999;
+      font-size: 14px;
     }
   }
 
@@ -102,25 +173,25 @@
       padding: 0.5rem 1.5rem;
       border-radius: 4px;
       text-decoration: none;
-      border: 1px solid #8B7355;
+      border: 1px solid #C8A882;
       background-color: transparent;
-      color: #8B7355;
+      color: #C8A882;
       font-weight: 500;
       cursor: pointer;
       transition: all 0.3s;
       white-space: nowrap;
 
       &:hover {
-        background-color: #8B7355;
+        background-color: #C8A882;
         color: #fff;
       }
     }
 
     .textBtn {
       padding: 0.5rem 1rem;
-      border: 1px solid #8B7355;
+      border: 1px solid #C8A882;
       background-color: transparent;
-      color: #8B7355;
+      color: #C8A882;
       border-radius: 4px;
       cursor: pointer;
       font-size: 0.95rem;
@@ -130,14 +201,14 @@
       white-space: nowrap;
 
       &:hover {
-        background-color: #8B7355;
+        background-color: #C8A882;
         color: white;
       }
     }
 
     .addProductBtn {
       padding: 0.5rem 1rem;
-      background-color: #8B7355 !important;
+      background-color: #C8A882 !important;
       color: white !important;
       border: none !important;
       border-radius: 4px;
@@ -154,6 +225,10 @@
       &:hover {
         background-color: #6d5a43 !important;
       }
+    }
+
+    .welcome{
+      color: #C8A882;
     }
   }
 }

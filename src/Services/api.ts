@@ -15,8 +15,13 @@ export const getProducts = async (page: number) => {
   return response.data;
 };
 
+export const getProductById = async (id: number) => {
+  const response = await api.get(`/products/${id}`);
+  return response.data;
+}
+
 export const getProductsByName = async (name: string, page: number = 1) => {
-  const response = await api.get(`/products?_page=${page}&_limit=20&name_like=${name}`);
+  const response = await api.get(`/products?name_like=${encodeURIComponent(name)}&_page=${page}&_limit=20`);
   return response.data;
 };
 

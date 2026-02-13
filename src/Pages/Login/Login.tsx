@@ -56,7 +56,7 @@ const Login = () => {
               localStorage.setItem('user', JSON.stringify(user));
               toast.success(`שלום ${user.firstName}! התחברת בהצלחה`);
               setTimeout(() => {
-                window.location.href = '/';
+                window.location.href = '/home';
               }, 1000);
             } catch (err) {
               setFieldError('password', 'אימייל או סיסמה שגויים');

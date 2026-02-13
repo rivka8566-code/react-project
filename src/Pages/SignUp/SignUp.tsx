@@ -244,8 +244,8 @@ const SignUp = () => {
                 <div className={styles.inputWrapper}>
                   <Field 
                     name="confirmPassword" 
-                    type={showConfirmPassword ? 'text' : 'password'} 
-                    placeholder="הקן שוב את הסיסמה" 
+                    type = "password"
+                    placeholder="הקש שוב את הסיסמה" 
                     className={
                       errors.confirmPassword && touched.confirmPassword 
                         ? styles.error 
@@ -254,10 +254,6 @@ const SignUp = () => {
                         : ''
                     } 
                   />
-                  <AiOutlineLock className={styles.icon} />
-                  <button type="button" className={styles.eyeIcon} onClick={() => setShowConfirmPassword(!showConfirmPassword)}>
-                    {showConfirmPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
-                  </button>
                 </div>
                 {errors.confirmPassword && touched.confirmPassword && <div className={styles.errorText}>{errors.confirmPassword}</div>}
               </div>
