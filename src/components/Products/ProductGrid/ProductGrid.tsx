@@ -57,15 +57,21 @@ const ProductGrid: FC<ProductGridProps> = (props: ProductGridProps) => {
             </button>
           )}
           <div className={styles.imageWrapper}>
-            {product.salesCount && product.salesCount > 50 && (
+            {product.salesCount > 50 && (
               <span className={styles.bestSeller}>רב מכר</span>
             )}
-            <img src={product.imageUrl} alt={product.name} />
+            <img 
+              src={product.imageUrl} 
+              alt=""
+              onError={(e) => {
+                e.currentTarget.src = 'https://via.placeholder.com/400x280?text=No+Image';
+              }}
+            />
           </div>
           <div className={styles.productInfo}>
             <h3 className={styles.productName}>{product.name}</h3>
             <div className={styles.productDetails}>
-              <span className={styles.sold}>נמכרו {product.salesCount || 0}</span>
+              <span className={styles.sold}>נמכרו {product.salesCount}</span>
               <span className={styles.price}>₪{product.price.toLocaleString()}</span>
             </div>
             <Link to={`/product/${product.id}`} className={styles.viewButton}>צפה בפרטים</Link>

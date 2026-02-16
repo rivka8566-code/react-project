@@ -1,1 +1,135 @@
-.AddReviewForm {}
+.AddReviewForm {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  direction: rtl;
+
+  h2 {
+    font-size: 22px;
+    color: #333;
+    margin: 0 0 20px 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ratingSection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    label {
+      font-size: 16px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .stars {
+      display: flex;
+      gap: 4px;
+
+      svg {
+        font-size: 24px;
+        cursor: pointer;
+        transition: color 0.2s;
+      }
+
+      .starFilled {
+        color: #C8A882;
+      }
+
+      .starEmpty {
+        color: #ddd;
+
+        &:hover {
+          color: #C8A882;
+        }
+      }
+    }
+
+    .errorText {
+      color: #ff4444;
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    label {
+      font-size: 16px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    textarea {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 15px;
+      font-family: inherit;
+      resize: vertical;
+      transition: border-color 0.3s;
+
+      &:focus {
+        outline: none;
+        border-color: #C8A882;
+      }
+
+      &.error {
+        border-color: #ff4444;
+      }
+    }
+
+    .errorText {
+      color: #ff4444;
+      font-size: 14px;
+    }
+  }
+
+  .submitBtn {
+    background: #C8A882;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #b89770;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 12px;
+  }
+
+  .cancelBtn {
+    background: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #e0e0e0;
+    }
+  }
+}

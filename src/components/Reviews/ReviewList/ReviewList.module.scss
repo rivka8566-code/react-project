@@ -1,1 +1,12 @@
-.ReviewList {}
+.ReviewList {
+  margin-top: 24px;
+
+  .noReviews {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    padding: 40px 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+}

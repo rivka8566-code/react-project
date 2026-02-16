@@ -152,6 +152,13 @@
             background-repeat: no-repeat;
             background-position: left 1rem center;
             padding-left: 3rem;
+            direction: rtl;
+            text-align: right;
+            
+            option {
+              direction: rtl;
+              text-align: right;
+            }
           }
 
           .icon {

@@ -1,4 +1,6 @@
 .ProductGrid {
+  position: relative;
+  
   .productCard {
     background: white;
     border-radius: 8px;
@@ -6,6 +8,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 
     &:hover {
       transform: translateY(-4px);
@@ -38,8 +41,33 @@
       img {
         width: 100%;
         height: 100%;
+        min-width: 100%;
+        min-height: 100%;
         object-fit: cover;
         transition: transform 0.4s ease;
+      }
+    }
+
+    .deleteButton {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #ff4444;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      z-index: 2;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #cc0000;
       }
     }
 
@@ -93,30 +121,6 @@
       }
     }
   }
-}
-
-    .deleteButton {
-      position: absolute;
-      top: 12px;
-      right: 12px;
-      background: #ff4444;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 36px;
-      height: 36px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      font-size: 18px;
-      z-index: 2;
-      transition: background 0.3s;
-
-      &:hover {
-        background: #cc0000;
-      }
-    }
 
   .modalOverlay {
     position: fixed;
@@ -187,3 +191,4 @@
       }
     }
   }
+}

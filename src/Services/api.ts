@@ -30,7 +30,7 @@ export const getProductsByCategory = async (category: string, page: number = 1) 
   return response.data;
 };
 
-export const createProduct = async (productData: Product) => {
+export const createProduct = async (productData: Omit<Product, 'id'>) => {
   const response = await api.post('/products', productData);
   return response.data;
 };
@@ -68,12 +68,17 @@ export const getReviews = async () => {
   return response.data;
 };
 
+export const getReviewsByProductId = async (productId: number) => {
+  const response = await api.get(`/reviews?productId=${productId}`);
+  return response.data;
+};
+
 export const createReview = async (reviewData: Review) => {
   const response = await api.post('/reviews', reviewData);
   return response.data;
 };
 
-export const deleteReview = async (reviewId: string) => {
+export const deleteReview = async (reviewId: number) => {
   const response = await api.delete(`/reviews/${reviewId}`);
   return response.data;
 };

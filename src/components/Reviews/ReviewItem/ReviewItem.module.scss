@@ -1,1 +1,142 @@
-.ReviewItem {}
+.ReviewItem {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  position: relative;
+  direction: rtl;
+
+  .deleteButton {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: transparent;
+    border: none;
+    color: #999;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #ff4444;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  .header {
+    margin-bottom: 12px;
+
+    .rightContent {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .userName {
+        font-weight: 500;
+        color: #333;
+        font-size: 16px;
+      }
+
+      .stars {
+        display: flex;
+        gap: 2px;
+
+        .starFilled {
+          color: #C8A882;
+          font-size: 16px;
+        }
+
+        .starEmpty {
+          color: #ddd;
+          font-size: 16px;
+        }
+      }
+
+      .date {
+        color: #999;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .comment {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .modalOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    border-radius: 8px;
+  }
+
+  .deleteModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 10px 16px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    z-index: 10;
+    width: 95%;
+
+    p {
+      font-size: 13px;
+      color: #666;
+      margin: 0 0 10px 0;
+      line-height: 1.3;
+    }
+
+    .modalButtons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+
+      button {
+        padding: 8px 24px;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .cancelBtn {
+        background: #f0f0f0;
+        color: #333;
+
+        &:hover {
+          background: #e0e0e0;
+        }
+      }
+
+      .confirmBtn {
+        background: #ff4444;
+        color: white;
+
+        &:hover {
+          background: #cc0000;
+        }
+      }
+    }
+  }
+}
