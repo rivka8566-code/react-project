@@ -15,7 +15,7 @@ export const getProducts = async (page: number) => {
   return response.data;
 };
 
-export const getProductById = async (id: number) => {
+export const getProductById = async (id: string) => {
   const response = await api.get(`/products/${id}`);
   return response.data;
 }
@@ -68,7 +68,7 @@ export const getReviews = async () => {
   return response.data;
 };
 
-export const getReviewsByProductId = async (productId: number) => {
+export const getReviewsByProductId = async (productId: string) => {
   const response = await api.get(`/reviews?productId=${productId}`);
   return response.data;
 };

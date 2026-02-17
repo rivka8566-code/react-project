@@ -30,10 +30,10 @@ const ProductDetails: FC<ProductDetailsProps> = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const productData = await getProductById(Number(id));
+        const productData = await getProductById(String(id));
         setProduct(productData);
         
-        const reviewsData = await getReviewsByProductId(Number(id));
+        const reviewsData = await getReviewsByProductId(String(id));
         setReviews(reviewsData);
         
         if (reviewsData.length > 0) {
