@@ -9,13 +9,24 @@ import Home from './Pages/Home/Home'
 import ProductDetails from './Pages/ProductDetails/ProductDetails'
 import Profile from './Pages/Profile/Profile'
 import AddProduct from './Pages/AddProduct/AddProduct'
+import { useEffect, useState } from 'react'
+import { User } from './models/User'
+
 function App() {
+  const [user, setUser] = useState<User | null>(null)
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem('user')
+    if (storedUser) {
+      setUser(JSON.parse(storedUser))
+    }
+  }, [])
   return (
     <BrowserRouter>
       <Routes>
         <Route path = '/login' element={<Login/>}></Route>
         <Route path = '/sign-up' element={<SignUp/>}></Route>
-        
+        {user ? 
         <Route path = '*' element={
           <>
             <NavBar/>
@@ -29,6 +40,7 @@ function App() {
             </Routes>
           </>
         }></Route>
+      : <Route path = '*' element={<Navigate to="/login"/>}></Route>}
       </Routes>
       <ToastContainer position="top-left" autoClose={3000} rtl={true} />
     </BrowserRouter>
